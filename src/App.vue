@@ -1,15 +1,10 @@
 <template>
-  <TopPage msg="Welcome to Your Vue.js App"/>
+  <router-view></router-view>
 </template>
 
 <script>
-import TopPage from './components/TopPage.vue'
-
 export default {
   name: 'App',
-  components: {
-    TopPage
-  }
 }
 </script>
 
