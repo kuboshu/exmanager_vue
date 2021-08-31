@@ -4,6 +4,7 @@
             <li v-for="article in disp_articles" v-bind:key="article">{{article}}</li>
         </ul>
         <button v-on:click="previousPage">前</button>
+        {{page+1}} / {{n_page+1}}
         <button v-on:click="nextPage">次</button>
     </div>
 </template>
