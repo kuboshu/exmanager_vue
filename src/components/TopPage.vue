@@ -1,12 +1,24 @@
 <template>
   <div>
+    <Nav></Nav>
     <h1>レポートを共有しようぜぃ!!</h1>
+    <Search></Search>
+    <News></News>
   </div>
 </template>
 
 <script>
+import Nav from './Nav.vue'
+import Search from './Search.vue'
+import News from './News.vue'
+
 export default {
   name: 'TopPage',
+  components: {
+    'Nav': Nav,
+    'Search': Search,
+    'News': News
+  }
 }
 </script>
 
