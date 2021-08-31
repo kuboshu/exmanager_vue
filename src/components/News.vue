@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="article in disp_articles" v-bind:key="article">{{article}}</li>
+            <li v-for="article in disp_articles" v-bind:key="article" v-on:click="toViewPage">{{article}}</li>
         </ul>
         <button v-on:click="previousPage">前</button>
         {{page+1}} / {{n_page+1}}
@@ -100,6 +100,10 @@ export default ({
                     this.valid_previous = false;
                 }
             }
+        },
+
+        toViewPage: function() {
+            this.$router.push("view");
         }
     }
 });
