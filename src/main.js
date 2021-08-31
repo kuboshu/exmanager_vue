@@ -8,6 +8,7 @@ import Login from './components/Login.vue'
 import UserReg from './components/UserReg.vue'
 import Result from './components/SearchResult.vue'
 import View from './components/View.vue'
+import UserTop from './components/UserTop.vue'
 
 const routes = [
     {path: '/', component: TopPage},
@@ -15,6 +16,7 @@ const routes = [
     {path: '/reg', component: UserReg},
     {path: '/result', component: Result},
     {path: '/view', component: View},
+    {path: '/usertop', component: UserTop},
 ];
 
 const router = createRouter({
