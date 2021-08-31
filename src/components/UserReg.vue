@@ -1,9 +1,9 @@
 <template>
-    <h1>ユーザー認証</h1>
+    <h1>ユーザー登録</h1>
 </template>
 
 <script>
 export default ({
-    name: 'Login'
+    name: 'UserReg',
 });
 </script>

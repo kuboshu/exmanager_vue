@@ -5,10 +5,12 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import TopPage from './components/TopPage.vue'
 import Login from './components/Login.vue'
+import UserReg from './components/UserReg.vue'
 
 const routes = [
     {path: '/', component: TopPage},
     {path: '/login', component: Login},
+    {path: '/reg', component: UserReg},
 ];
 
 const router = createRouter({
