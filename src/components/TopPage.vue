@@ -3,6 +3,7 @@
     <Nav></Nav>
     <h1>レポートを共有しようぜぃ!!</h1>
     <Search></Search>
+    最新記事2020/1/1更新
     <News></News>
   </div>
 </template>
