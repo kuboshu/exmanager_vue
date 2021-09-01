@@ -14,7 +14,7 @@
 
         <div>
             <button @click="certification">認証</button>
-            <button @click="toTopPage">キャンセル</button>
+            <button @click="cancel">キャンセル</button>
         </div>
     </div>
 </template>
@@ -34,7 +34,8 @@ export default ({
         return {
             name: '',
             passwd: '',
-            fail_auth: false
+            fail_auth: false,
+            prev_path: ''
         };
     },
 
@@ -47,9 +48,19 @@ export default ({
             }
         },
 
-        toTopPage: function() {
-            this.$router.push("/");
-        }
+        cancel: function() {
+            if (this.prev_path == '/reg') {
+                this.$router.push("/");
+            } else {
+                this.$router.back();
+            }
+        },
+    },
+
+    beforeRouteEnter(to, from, next) {
+        next(vm => {
+            vm.prev_path = from.path
+        });
     }
 });
 </script>
