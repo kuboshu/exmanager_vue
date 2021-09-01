@@ -26,7 +26,7 @@
         </div>
 
         <div>
-            <button @click="toUserTop">登録</button>
+            <button @click="toLogin">登録</button>
             <button @click="toPreviousPage">キャンセル</button>
         </div>
     </div>
@@ -131,14 +131,14 @@ export default ({
             }
         },
 
-        toUserTop: function() {
+        toLogin: function() {
             if (
                 this.account_name_ok &&
                 this.email_ok &&
                 this.passwd_ok &&
                 this.verify_passwd 
             ) {
-                this.$router.push('usertop');
+                this.$router.push('login');
             }
         },
 
