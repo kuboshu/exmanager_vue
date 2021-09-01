@@ -9,6 +9,9 @@ import UserReg from './components/UserReg.vue'
 import Result from './components/SearchResult.vue'
 import View from './components/View.vue'
 import UserTop from './components/UserTop.vue'
+import ManageArticle from './components/ManageArticle.vue'
+import ManageGroup from './components/ManageGroup.vue'
+import ManageAccount from './components/ManageAccount.vue'
 
 const routes = [
     {path: '/', component: TopPage},
@@ -17,6 +20,9 @@ const routes = [
     {path: '/result', component: Result},
     {path: '/view', component: View},
     {path: '/usertop', component: UserTop},
+    {path: '/manage_article', component: ManageArticle},
+    {path: '/manage_group', component: ManageGroup},
+    {path: '/manage_account', component: ManageAccount},
 ];
 
 const router = createRouter({
