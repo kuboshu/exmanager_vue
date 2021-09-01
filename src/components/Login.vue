@@ -4,12 +4,12 @@
         <p v-if="fail_auth" style="color: red;">認証に失敗しました</p>
         <div>
             アカウント名:
-            <input type="text" placeholder="アカウント名" v-model="name">
+            <input type="text" placeholder="アカウント名" @keydown.enter="certification" v-model="name">
         </div>
 
         <div>
             パスワード:
-            <input type="password" placeholder="パスワード" v-model="passwd">
+            <input type="password" placeholder="パスワード" @keydown.enter="certification" v-model="passwd">
         </div>
 
         <div>
