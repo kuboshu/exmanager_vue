@@ -8,9 +8,6 @@
         <div>
             <input type="text" placeholder="#タグ1 #タグ2 ...">
         </div>
-        <div>
-            <input type="textarea" placeholder="#本文">
-        </div>
         <ArticleEditor></ArticleEditor>
         <div>
             <span>プレビュー</span> | <span>編集</span>
