@@ -15,6 +15,7 @@ import ManageAccount from './components/ManageAccount.vue'
 import EditArticle from './components/EditArticle.vue'
 import NewArticle from './components/NewArticle.vue'
 import DraftTop from './components/DraftTop.vue'
+import ConfirmPublish from './components/ConfirmPublish.vue'
 
 const routes = [
     {path: '/', component: TopPage},
@@ -29,6 +30,7 @@ const routes = [
     {path: '/edit_article', component: EditArticle},
     {path: '/newarticle', component: NewArticle},
     {path: '/drafttop', component: DraftTop},
+    {path: '/confirmpublish', component: ConfirmPublish},
 ];
 
 const router = createRouter({
