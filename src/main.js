@@ -12,6 +12,9 @@ import UserTop from './components/UserTop.vue'
 import ManageArticle from './components/ManageArticle.vue'
 import ManageGroup from './components/ManageGroup.vue'
 import ManageAccount from './components/ManageAccount.vue'
+import EditArticle from './components/EditArticle.vue'
+import NewArticle from './components/NewArticle.vue'
+import DraftTop from './components/DraftTop.vue'
 
 const routes = [
     {path: '/', component: TopPage},
@@ -23,6 +26,9 @@ const routes = [
     {path: '/manage_article', component: ManageArticle},
     {path: '/manage_group', component: ManageGroup},
     {path: '/manage_account', component: ManageAccount},
+    {path: '/edit_article', component: EditArticle},
+    {path: '/newarticle', component: NewArticle},
+    {path: '/drafttop', component: DraftTop},
 ];
 
 const router = createRouter({
