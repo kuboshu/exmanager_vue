@@ -16,6 +16,7 @@ import EditArticle from './components/EditArticle.vue'
 import NewArticle from './components/NewArticle.vue'
 import DraftTop from './components/DraftTop.vue'
 import ConfirmPublish from './components/ConfirmPublish.vue'
+import './assets/tailwind.css'
 
 const routes = [
     {path: '/', component: TopPage},
