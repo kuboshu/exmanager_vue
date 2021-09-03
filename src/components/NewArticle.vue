@@ -10,9 +10,6 @@
         </div>
         <ArticleEditor></ArticleEditor>
         <div>
-            <span>プレビュー</span> | <span>編集</span>
-        </div>
-        <div>
             公開グループ：
             <select name="group">
                 <option v-for="group in groups" v-bind:key="group">{{group}}</option>

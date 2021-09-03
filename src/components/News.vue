@@ -1,8 +1,8 @@
 <template>
     <div>
-        <ul>
-            <li v-for="article in disp_articles" v-bind:key="article" v-on:click="toViewPage">{{article}}</li>
-        </ul>
+        <div v-for="article in disp_articles" v-bind:key="article" v-on:click="toViewPage">
+            {{article}}
+        </div>
         <button v-on:click="previousPage">前</button>
         {{page+1}} / {{n_page+1}}
         <button v-on:click="nextPage">次</button>
@@ -84,7 +84,7 @@ export default ({
             if (this.valid_next) {
                 this.valid_previous = true;
                 this.page = this.page + 1;
-                this.disp_articles = this.articles.slice(10*this.page, 10*this.page + this.size);
+                this.disp_articles = this.articles.slice(this.size * this.page, this.size * this.page + this.size);
                 if (this.page == this.n_page) {
                     this.valid_next = false;
                 }
@@ -95,7 +95,7 @@ export default ({
             if (this.valid_previous) {
                 this.valid_next = true;
                 this.page = this.page - 1;
-                this.disp_articles = this.articles.slice(10*this.page, 10*this.page + this.size);
+                this.disp_articles = this.articles.slice(this.size * this.page, this.size * this.page + this.size);
                 if (this.page == 0) {
                     this.valid_previous = false;
                 }
