@@ -24,6 +24,8 @@
       </div>
     </div>
 
+    <DiscardConfirmation></DiscardConfirmation>
+
     <div class="flex">
       <div>最新記事2020/1/1更新</div>
       <div class="content-center">
@@ -38,6 +40,7 @@ import News from './News.vue'
 import Search from './parts/SearchField.vue'
 import Login from './parts/ButtonLogin.vue'
 import Registration from './parts/ButtonUserRegistration.vue'
+import DiscardConfirmation from './DiscardConfirmationModal.vue'
 
 export default {
   name: 'TopPage',
@@ -45,7 +48,8 @@ export default {
     'News': News,
     'Search': Search,
     'Login': Login,
-    'Registration': Registration
+    'Registration': Registration,
+    'DiscardConfirmation': DiscardConfirmation
   },
 }
 </script>
