@@ -4,7 +4,7 @@
       <div class="text-right text-white">
         <div class="flex justify-end">
           <div class="mr-5 mt-2">
-            <Login></Login>
+            <Authentication></Authentication>
           </div>
           <div class="mr-5 mt-2">
             <Registration></Registration>
@@ -24,7 +24,6 @@
       </div>
     </div>
 
-    <DiscardConfirmation></DiscardConfirmation>
 
     <div class="flex">
       <div>最新記事2020/1/1更新</div>
@@ -38,18 +37,16 @@
 <script>
 import News from './News.vue'
 import Search from './parts/SearchField.vue'
-import Login from './parts/ButtonLogin.vue'
 import Registration from './parts/ButtonUserRegistration.vue'
-import DiscardConfirmation from './DiscardConfirmationModal.vue'
+import Authentication from './AuthenticationModal.vue'
 
 export default {
   name: 'TopPage',
   components: {
     'News': News,
     'Search': Search,
-    'Login': Login,
     'Registration': Registration,
-    'DiscardConfirmation': DiscardConfirmation
+    'Authentication': Authentication
   },
 }
 </script>
