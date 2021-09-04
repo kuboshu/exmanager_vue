@@ -12,7 +12,7 @@
 
 <script>
 import Nav from './Nav.vue'
-import Search from './Search.vue'
+import Search from './parts/SearchField.vue'
 import News from './News.vue'
 
 const menus = [

@@ -4,11 +4,11 @@ import App from './App.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import TopPage from './components/TopPage.vue'
-import Login from './components/Login.vue'
-import UserReg from './components/UserReg.vue'
+import LoginPage from './components/LoginPage.vue'
+import UserRegPage from './components/UserRegPage.vue'
 import Result from './components/SearchResult.vue'
 import View from './components/View.vue'
-import UserTop from './components/UserTop.vue'
+import UserTopPage from './components/UserTopPage.vue'
 import ManageArticle from './components/ManageArticle.vue'
 import ManageGroup from './components/ManageGroup.vue'
 import ManageAccount from './components/ManageAccount.vue'
@@ -20,11 +20,11 @@ import './assets/tailwind.css'
 
 const routes = [
     {path: '/', component: TopPage},
-    {path: '/login', component: Login},
-    {path: '/reg', component: UserReg},
+    {path: '/login', component: LoginPage},
+    {path: '/reg', component: UserRegPage},
     {path: '/result', component: Result},
     {path: '/view', component: View},
-    {path: '/usertop', component: UserTop},
+    {path: '/usertop', component: UserTopPage},
     {path: '/manage_article', component: ManageArticle},
     {path: '/manage_group', component: ManageGroup},
     {path: '/manage_account', component: ManageAccount},
