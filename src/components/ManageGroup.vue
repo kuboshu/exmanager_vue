@@ -1,9 +1,9 @@
 <template>
-    <h1>ユーザートップページ</h1>
+    <h1>グループ管理</h1>
 </template>
 
 <script>
 export default ({
-    name: 'UserTop'
+    name: 'ManageGroup'
 });
 </script>

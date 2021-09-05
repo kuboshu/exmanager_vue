@@ -1,8 +1,13 @@
 <template>
     <div>
-        <div v-for="article in disp_articles" v-bind:key="article" v-on:click="toViewPage">
-            {{article}}
-        </div>
+        <ul>
+            <li v-for="article in disp_articles" v-bind:key="article">
+                <span v-on:click="toViewPage">{{article}}</span>
+                <span @click="toEdit">[編集]</span>
+                | 
+                <span>[削除]</span>
+            </li>
+        </ul>
         <button v-on:click="previousPage">前</button>
         {{page+1}} / {{n_page+1}}
         <button v-on:click="nextPage">次</button>
@@ -61,12 +66,12 @@ const articles = [
     'サンプル記事39'
 ];
 
-const page_size = 10;
+const page_size = 5;
 const n_articles = articles.length;
 const n_page =  Math.floor(n_articles / page_size);
 
 export default ({
-    name: 'News',
+    name: 'PublishedArticle',
     data: function() {
         return {
             articles: articles,
@@ -84,7 +89,7 @@ export default ({
             if (this.valid_next) {
                 this.valid_previous = true;
                 this.page = this.page + 1;
-                this.disp_articles = this.articles.slice(this.size * this.page, this.size * this.page + this.size);
+                this.disp_articles = this.articles.slice(this.size*this.page, this.size*this.page + this.size);
                 if (this.page == this.n_page) {
                     this.valid_next = false;
                 }
@@ -95,7 +100,7 @@ export default ({
             if (this.valid_previous) {
                 this.valid_next = true;
                 this.page = this.page - 1;
-                this.disp_articles = this.articles.slice(this.size * this.page, this.size * this.page + this.size);
+                this.disp_articles = this.articles.slice(this.size*this.page, this.size*this.page + this.size);
                 if (this.page == 0) {
                     this.valid_previous = false;
                 }
@@ -104,6 +109,10 @@ export default ({
 
         toViewPage: function() {
             this.$router.push("view");
+        },
+
+        toEdit: function() {
+            this.$router.push("edit_article");
         }
     }
 });
