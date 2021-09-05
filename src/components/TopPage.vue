@@ -46,7 +46,7 @@ export default {
     'News': News,
     'Search': Search,
     'Registration': Registration,
-    'Authentication': Authentication
+    'Authentication': Authentication,
   },
 }
 </script>
